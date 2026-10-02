@@ -12,11 +12,16 @@ Input: [1, 2, 3, 4, 5]
 Output: False
 """
 
+from collections import deque
+
+
 def has_duplicates(product_ids):
-    # Your implementation here
-    pass
-
-
+    if len(product_ids) != len(set(product_ids)):
+        return True
+    else:
+        return False
+# Had the same issue I described with my technical approach it works but is a terrible time complexity O(n) #
+# This tracks the unique values seen and if theres more then one of a unique value it reutrns true #
 """
 Problem 2: Order Manager
 
@@ -32,14 +37,15 @@ task_queue.remove_oldest_task() → "Email follow-up"
 
 class TaskQueue:
     def __init__(self):
-        # Your initialization here
-        pass
+        self.tasks = deque()
 
     def add_task(self, task):
-        pass
+        self.tasks.append(task)
 
     def remove_oldest_task(self):
-        pass
+        if not self.tasks:
+            return None
+        return self.tasks.popleft()
 
 
 """
@@ -57,10 +63,10 @@ tracker.get_unique_count() → 2
 
 class UniqueTracker:
     def __init__(self):
-        pass
+        self.values = set()
 
     def add(self, value):
-        pass
+        self.values.add(value)
 
     def get_unique_count(self):
-        pass
+        return len(self.values)
