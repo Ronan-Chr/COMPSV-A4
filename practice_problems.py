@@ -46,7 +46,7 @@ class TaskQueue:
         if not self.tasks:
             return None
         return self.tasks.popleft()
-
+# This class does the space management for the queue of tasks for adding or removing something from it #
 
 """
 Problem 3: Unique Value Counter
@@ -70,3 +70,4 @@ class UniqueTracker:
 
     def get_unique_count(self):
         return len(self.values)
+# Returns the amount of unique values seen and also tallies amount of values in the tracker #
