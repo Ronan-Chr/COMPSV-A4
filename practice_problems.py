@@ -21,7 +21,7 @@ def has_duplicates(product_ids):
     else:
         return False
 # Had the same issue I described with my technical approach it works but is a terrible time complexity O(n) #
-# This tracks the unique values seen and if theres more then one of a unique value it reutrns true #
+# This tracks the unique values seen and if theres more then one of a unique value difference in the set it returns true #
 """
 Problem 2: Order Manager
 
@@ -46,7 +46,7 @@ class TaskQueue:
         if not self.tasks:
             return None
         return self.tasks.popleft()
-# This class does the space management for the queue of tasks for adding or removing something from it #
+# This class does the space management (deque or removing) for the queue of tasks for adding or removing something from it #
 
 """
 Problem 3: Unique Value Counter
@@ -70,4 +70,4 @@ class UniqueTracker:
 
     def get_unique_count(self):
         return len(self.values)
-# Returns the amount of unique values seen and also tallies amount of values in the tracker #
+# Returns the amount of values seen in a set and also tallies amount of values in the tracker #

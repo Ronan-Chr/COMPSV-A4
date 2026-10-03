@@ -1,0 +1,24 @@
+## Reflection Questions?
+
+-What structure you chose and why?
+-How the time limit shaped your decision?
+-What trade-offs or compromises you made under time pressure?
+
+My Answer - I tried to assess the data structures for each question by asking myself 
+from the description what is the out first and what is in first. The structure was something ive seen before but I also
+have the automatic duplicate detection and thats from the information turning into a set and comparing the lengths of with dupes and without
+if a set gets shorter that means there is duplicates in it. For questions one and three I used sets while number two was a queue.
+
+- Problem 2 I initially did by using a stack because I misinterpretted what the actual priority order was
+I thought it was implying last in first out but realized it was first in first out which made me decide on using a Queue for it.
+Using a Queue is the right choice for it because being able to remove first in first out from the email follow ups needing to be 
+addressed in order. Normal lists in python sift through the list for the position being asked for. I didnt find the time constraint too
+worrisome because ive done lots of similar things before but it did make me worry going into start I thought they would be harder technicals.
+
+-Problem 3 because of the time i wasnt able to do the normal planning out the way I woould for a different program say a class assignment.
+I like to write down hard requirments of a prompt or problem im solving in a class say a criteria like "Remove duplicates" or "make case sensitive"
+can be hard requirments for an assignment whereas something like aesthetics can be more maeliable and subjective to a developer which is usually not what im focused on.
+
+-Overall I found this assignment very interesting and hope to see more things like it because its very relevent to the actual experience where companies want you to be able
+to answer a lot in technical interviews I would say they usually have a Leetcode medium somewhere in the list of things they ask you to do and maybe submit notes with a program
+to show how you think while approaching it.
